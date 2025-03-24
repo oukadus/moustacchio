@@ -1,0 +1,206 @@
+/* /////////////////////////////////////////////
+// 1. BASE
+///////////////////////////////////////////// */
+
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&display=swap");
+
+:root {
+  --color-accent: rgba(11, 163, 156, 0.9);
+  --color-black: #252525;
+  --font-regular: arial, helvetica, sans-serif;
+  --font-headings: "Poller One", cursive;
+  /* --font-size: 62.5%; */
+}
+
+/* html {
+  font-size: var(--font-size);
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-regular);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* /////////////////////////////////////////////	   
+// 2. BOOTSTRAP RESET
+///////////////////////////////////////////// */
+
+.active {
+  color: var(--color-accent) !important;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+
+  &:hover {
+    color: var(--color-accent);
+    background-color: #fefefe;
+  }
+}
+
+.card-title {
+  font-family: var(--font-headings);
+}
+
+.card {
+  border: none;
+}
+
+header .fs-4 {
+  font-size: 1.2rem !important;
+}
+
+.nav-bar-toggler {
+  text-align: center;
+}
+
+/* /////////////////////////////////////////////
+// 2. HEADER & NAVIGATION      
+///////////////////////////////////////////// */
+
+.logo {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.nav-item a {
+  display: inline-block;
+  margin: 0 1rem;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 0.9rem;
+}
+
+#hero {
+  background: url("../img/the-beacon.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: var(--font-headings);
+  color: var(--color-black);
+  width: 65%;
+}
+
+/* /////////////////////////////////////////////
+// 3. WORKS      
+///////////////////////////////////////////// */
+
+.imgFilter {
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0.8;
+
+  &:hover {
+    /* black overlay */
+    opacity: 1;
+  }
+}
+
+/* /////////////////////////////////////////////
+// 3. FOOTER     
+///////////////////////////////////////////// */
+
+footer {
+  background-color: var(--color-black);
+  color: #fefefe;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.socialIcon {
+  color: var(--color-accent);
+  display: inline-block;
+  padding: 0.5rem;
+  border: 2px solid #dcdfe3;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: #fefefe;
+    background-color: var(--color-accent);
+  }
+}
+
+/* /////////////////////////////////////////////
+// 4. ABOUT 
+///////////////////////////////////////////// */
+
+#aboutHero > img {
+  border: 2px solid lightgray;
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* /////////////////////////////////////////////
+// 5. GALLERY
+///////////////////////////////////////////// */
+
+article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+
+/* Single Post Gallery */
+img.singleImg {
+  width: 50%;
+  height: 40vh;
+  object-fit: cover;
+  object-position: bottom center;
+}
+
+/* /////////////////////////////////////////////	   
+// 6. CONTACT
+///////////////////////////////////////////// */
+/* Form input & textarea styling override */
+#contact-form .custom-input {
+  border: 2px solid #252525;
+  color: #252525;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 10px;
+  background: transparent;
+}
+
+#contact-form textarea.custom-input {
+  resize: none;
+}
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: #898989;
+  opacity: 1;
+}
+
+/* Submit button style (similar to your previous #send) */
+#contact-form #send {
+  background: #252525;
+  color: #fff;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+  border: none;
+}
+
+#contact-form #send:hover {
+  background: #fff;
+  color: #252525;
+  border: 2px solid #252525;
+  cursor: pointer;
+}
