@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -16,7 +16,9 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid flex-wrap">
-                <a class="navbar-brand logo" href="#"><img src="./img/logo.jpg" alt="logo Moustacchio"></a>
+                <div class="logo">
+                    <a class="navbar-brand" href="#"><img src="./assets/img/logo.jpg" alt="logo Moustacchio"></a>
+                </div>
                 <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -28,7 +30,7 @@
                             <a class="nav-link text-uppercase" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase active" href="about.html">About</a>
+                            <a class="nav-link text-uppercase" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase" href="gallery.html">Gallery</a>
@@ -43,7 +45,7 @@
 
         <div class="container" id="aboutHero">
             <h1 class="bg-black text-white text-uppercase py-4 w-100 text-center fs-4">Mustacchio Started</h1>
-            <img src="./img/photographer.jpg" alt="Un photographe" class="aboutImg">
+            <img src="./assets/img/photographer.jpg" alt="Un photographe" class="aboutImg">
         </div>
     </header>
 
@@ -60,7 +62,8 @@
                         Perspiciatis corporis quidem assumenda reprehenderit voluptatum sit autem, qui quia nam nisi
                         perferendis ratione quod expedita dolorem fuga quos ad officia cumque facere fugiat. Corrupti
                         amet
-                        non voluptatum aut magnam. <span class="text-decoration-underline">Eveniet dolore illo
+                        non voluptatum aut magnam. <span class="text-decoration-underline about-pointer">Eveniet dolore
+                            illo
                             iste.</span>
                     </p>
                 </div>
@@ -71,14 +74,15 @@
                         Perspiciatis corporis quidem assumenda reprehenderit voluptatum sit autem, qui quia nam nisi
                         perferendis ratione quod expedita dolorem fuga quos ad officia cumque facere fugiat. Corrupti
                         amet
-                        non voluptatum aut magnam. <span class="text-decoration-underline">Eveniet dolore illo
+                        non voluptatum aut magnam. <span class="text-decoration-underline about-pointer">Eveniet dolore
+                            illo
                             iste.</span>
                     </p>
                 </div>
                 <div class="my-5 text-center">
                     <h3 class="fs-6 fw-bold">We Have more for Your</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span
-                            class="text-decoration-underline">Voluptate quos vero</span> reiciendis, quasi
+                            class="text-decoration-underline about-pointer">Voluptate quos vero</span> reiciendis, quasi
                         nostrum enim fugit beatae tenetur explicabo provident, quo et. Sequi consectetur iure suscipit.
                         Perspiciatis corporis quidem assumenda reprehenderit voluptatum sit autem, qui quia nam nisi
                         perferendis ratione quod expedita dolorem fuga quos ad officia cumque facere fugiat. Corrupti
@@ -87,7 +91,8 @@
                 </div>
                 <div class="my-5 text-center">
                     <h3 class="fs-6 fw-bold">Be Part of Our Community</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur<span class="text-decoration-underline">Eveniet dolore
+                    <p>Lorem ipsum dolor, sit amet consectetur<span
+                            class="text-decoration-underline about-pointer">Eveniet dolore
                             illo
                             iste.</span>. Voluptate quos vero reiciendis, quasi
                         nostrum enim fugit beatae tenetur explicabo provident, quo et. Sequi consectetur iure suscipit.
@@ -97,9 +102,11 @@
                 <div class="my-5 text-center">
                     <h3 class="fs-6 fw-bold">More details</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quos vero reiciendis, quasi
-                        nostrum enim fugit beatae tenetur <span class="text-decoration-underline">Eveniet dolore illo
+                        nostrum enim fugit beatae tenetur <span class="text-decoration-underline about-pointer">Eveniet
+                            dolore illo
                             iste.</span>, quo et. Sequi consectetur iure suscipit.
-                        Perspiciatis corporis quidem assumenda <span class="text-decoration-underline">Eveniet dolore
+                        Perspiciatis corporis quidem assumenda <span
+                            class="text-decoration-underline about-pointer">Eveniet dolore
                             illo
                             iste.</span> sit autem, qui quia nam nisi
                         perferendis ratione quod expedita dolorem fuga quos ad officia cumque facere fugiat. Corrupti
@@ -129,14 +136,16 @@
 
 
 
+    <!-- Mon fichier js -->
+    <script src="./assets/js/nav.js"></script>
 
-
-    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
         </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
